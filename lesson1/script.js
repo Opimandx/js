@@ -33,10 +33,11 @@ let a = prompt('Какой тип товара будем продавать?');
 
  do {
 	let a = prompt('Какой тип товара будем продавать?');
-		
+	if ((typeof(a)) === 'string' && (typeof(a)) !== null && a != "" && a.length < 50  ){
 		mainList.shopGoods[count] = a;
 		console.log(mainList)
 		count++;
+	}
 		}	while (count < 5);
 		
  
