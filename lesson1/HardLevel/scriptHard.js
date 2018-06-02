@@ -1,6 +1,6 @@
 var num = 33721;
 var mult = 1;
- 
+var double = 2;
 for (var i = 1; i<=5; i++){
     mult *= num%10;
     num = Math.floor(num/10);
@@ -8,4 +8,10 @@ for (var i = 1; i<=5; i++){
     
 }
  
- console.log(mult);
+ console.log(mult);   //результат умножения
+
+ var powResult = mult**double;  //результат возведения в степень
+
+ console.log(powResult);
+
+ console.log(Math.floor(powResult/1000))  // отрубаем первые две 
