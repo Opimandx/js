@@ -28,7 +28,7 @@ mainList = {
 // 		}
 // }
 let count = 0;
-let a = prompt('Какой тип товара будем продавать?');
+
 
 
  do {
