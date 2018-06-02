@@ -1,10 +1,8 @@
 var budgetIn = prompt("Ваш бюджет на месяц : ", 1000)
 var storeNameIn = prompt("Название вашего магазина ", "Котошоп")
 
-mainList = {  //хотел инициализоровать как в видео, но почему-то не получалось, 
-				//были синтаксические ошибки. Нашел в учебнике такой способ - заработало :с
-
-
+mainList = { 
+		
 		budget: budgetIn,
 		storeName: storeNameIn,
 		shopGoods: [],
@@ -12,14 +10,40 @@ mainList = {  //хотел инициализоровать как в видео
 		open: true
 };
 
-mainList.shopGoods[0] = prompt("Введите название первого товара", '')
-mainList.shopGoods[1] = prompt("Введите название второго товара", '')
-mainList.shopGoods[2] = prompt("Введите название третьего товара", '')
+// for (let i = 0; i < 5; i++){
+// 	let a = prompt('Какой тип товара будем продавать?')
+// 	if ((typeof(a)) === 'string' && (typeof(a)) !== null && a != "" && a.length < 50  ){
+// 	mainList.shopGoods[i] = a;
+// 	console.log(mainList)
+// 	}
+// }
 
- alert(mainList.shopGoods);
+// let count = 0;
+// while (count < 5){
+// 	let a = prompt('Какой тип товара будем продавать?')
+// 	if ((typeof(a)) === 'string' && (typeof(a)) !== null && a != "" && a.length < 50  ){
+// 		mainList.shopGoods[count] = a;
+// 		console.log(mainList)
+// 		count++;
+// 		}
+// }
+let count = 0;
+let a = prompt('Какой тип товара будем продавать?');
 
- alert(budget/30); 
 
+ do {
+	let a = prompt('Какой тип товара будем продавать?');
+		
+		mainList.shopGoods[count] = a;
+		console.log(mainList)
+		count++;
+		}	while (count < 5);
+		
+ 
+
+ 
+
+ 
 
  
 
