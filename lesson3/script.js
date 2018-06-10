@@ -31,7 +31,7 @@ let discount = true;
 
 function showDiscountPrice(discount) {
 	if (discount === true)
-		return (price * 20) / 100;
+		return 100*0.8;
 }
 
 function employers() {
