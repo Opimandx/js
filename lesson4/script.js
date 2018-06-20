@@ -60,12 +60,12 @@ mainList = {
  
 mainList.kindOfGoods();
 
-
+// показываем наши товары по порядку
 mainList.shopGoods.forEach(function(item, i, arr){
 	console.log(i + 1+': '+ item+ " ")
 })
 
-
+// показываем свойства объекта
 for (key in mainList){
 	console.log(key)
 }
