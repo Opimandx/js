@@ -2,10 +2,10 @@
 //·        Получить кнопку "Открыть магазин" через id
 let opnBtn = document.getElementById("open-btn");
 //·        Получить все поля в левом меню через классы
-let nameVal = document.getElementsByClassName("name-value"),
-    budgVal = document.getElementsByClassName("budget-value"),
-    goodVal = document.getElementsByClassName('goods-value'),
-    itemVal = document.getElementsByClassName('items-value'),
+let nameVal = document.getElementsByClassName("name-value")[0],
+    budgVal = document.getElementsByClassName("budget-value")[0],
+    goodVal = document.getElementsByClassName('goods-value')[0],
+    itemVal = document.getElementsByClassName('items-value')[0],
     employVal = document.getElementsByClassName('employers-value'),
     discountVal = document.getElementsByClassName('discount-value'),
     isOpn = document.getElementsByClassName('isopen-value');
